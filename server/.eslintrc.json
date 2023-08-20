@@ -1,0 +1,28 @@
+{
+  "root": true,
+    "env": {
+        "commonjs": true,
+        "es2021": true,
+        "jest/globals": true
+    },
+    "extends": ["airbnb-base", "prettier"],
+    "overrides": [
+    ],
+    "ignorePatterns": ["**/node_modules/**"] ,
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "plugins": [
+        "prettier",
+        "jest"
+      ],
+    "rules": {
+        "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+        "prettier/prettier": ["error",
+        {
+          "semi": false,
+          "singleQuote": true,
+          "trailingComma": "es5"
+        }]
+    }
+}

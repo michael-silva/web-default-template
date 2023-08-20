@@ -1,0 +1,11 @@
+{
+  "name": "jarvis",
+  "scripts": {
+    "start": "echo 'Start each workspace individually to work'",
+    "test": "cross-env jest --watch"
+  },
+  "workspaces": [
+    "server",
+    "ui"
+  ]
+}
