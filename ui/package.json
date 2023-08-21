@@ -17,22 +17,27 @@
     "@fontsource/roboto": "^5.0.8",
     "@mui/icons-material": "^5.14.3",
     "@mui/material": "^5.14.3",
-    "eslint": "8.46.0",
-    "eslint-config-next": "13.4.13",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-prettier": "^4.2.1",
     "next": "13.4.13",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
+  "devDependencies": {
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.13",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "2.8.3",
+    "prettier-eslint": "^15.0.1"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michael-silva/jarvis.git"
+    "url": "git+https://github.com/michael-silva/web-default-template.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/michael-silva/jarvis/issues"
+    "url": "https://github.com/michael-silva/web-default-template/issues"
   },
-  "homepage": "https://github.com/michael-silva/jarvis#readme"
+  "homepage": "https://github.com/michael-silva/web-default-template#readme"
 }

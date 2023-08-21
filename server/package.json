@@ -1,9 +1,13 @@
 {
-  "name": "machine-learning",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
   "devDependencies": {
     "cross-env": "^7.0.3",
     "eslint": "^8.32.0",
@@ -23,16 +27,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michael-silva/jarvis.git"
+    "url": "git+https://github.com/michael-silva/web-default-template.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/michael-silva/jarvis/issues"
+    "url": "https://github.com/michael-silva/web-default-template/issues"
   },
-  "homepage": "https://github.com/michael-silva/jarvis#readme",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.18.2"
-  }
+  "homepage": "https://github.com/michael-silva/web-default-template#readme"
 }

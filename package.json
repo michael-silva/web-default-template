@@ -1,5 +1,5 @@
 {
-  "name": "jarvis",
+  "name": "web-default-template",
   "scripts": {
     "start": "echo 'Start each workspace individually to work'",
     "test": "cross-env jest --watch"
