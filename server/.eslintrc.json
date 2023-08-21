@@ -2,10 +2,9 @@
   "root": true,
     "env": {
         "commonjs": true,
-        "es2021": true,
-        "jest/globals": true
+        "es2021": true
     },
-    "extends": ["airbnb-base", "prettier"],
+    "extends": ["airbnb-base", "prettier", "plugin:prettier/recommended"],
     "overrides": [
     ],
     "ignorePatterns": ["**/node_modules/**"] ,
@@ -13,8 +12,7 @@
         "ecmaVersion": "latest"
     },
     "plugins": [
-        "prettier",
-        "jest"
+        "prettier"
       ],
     "rules": {
         "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
