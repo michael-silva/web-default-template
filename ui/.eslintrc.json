@@ -2,5 +2,17 @@
   "root": true,
   "extends": ["next/core-web-vitals", "airbnb-base", "prettier", "plugin:prettier/recommended"],
   "plugins": ["prettier"],
-  "ignorePatterns": ["**/node_modules/**"]
+  "ignorePatterns": ["**/node_modules/**"],
+  "rules": {
+    "import/extensions": [
+       "error",
+       "ignorePackages",
+       {
+         "js": "never",
+         "jsx": "never",
+         "ts": "never",
+         "tsx": "never"
+       }
+    ]
+ }
 }

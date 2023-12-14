@@ -6,14 +6,14 @@ import { useServerInsertedHTML } from 'next/navigation'
 import { CacheProvider as DefaultCacheProvider } from '@emotion/react'
 
 // Adapted from https://github.com/garronej/tss-react/blob/main/src/next/appDir.tsx
-export default function NextAppDirEmotionCacheProvider(props) {
+export default function NextAppDirEmotionCacheProvider(props: any) {
   const { options, CacheProvider = DefaultCacheProvider, children } = props
 
   const [registry] = React.useState(() => {
     const cache = createCache(options)
     cache.compat = true
     const prevInsert = cache.insert
-    let inserted = []
+    let inserted: any[] = []
     cache.insert = (...args) => {
       const [selector, serialized] = args
       if (cache.inserted[serialized.name] === undefined) {
@@ -40,7 +40,7 @@ export default function NextAppDirEmotionCacheProvider(props) {
     let styles = ''
     let dataEmotionAttribute = registry.cache.key
 
-    const globals = []
+    const globals: any[] = []
 
     inserted.forEach(({ name, isGlobal }) => {
       const style = registry.cache.inserted[name]

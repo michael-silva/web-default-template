@@ -1,12 +1,15 @@
 'use client'
 
 import * as React from 'react'
-import Box from '@mui/material/Box'
-import Typography from '@mui/material/Typography'
-import Container from '@mui/material/Container'
-import Button from '@mui/material/Button'
+import { Typography, Box, Container, Button } from '@mui/material'
 
-export default function Error({ error, reset }) {
+export default function Error({
+  error,
+  reset,
+}: {
+  error: string
+  reset: () => null
+}) {
   React.useEffect(() => {
     // Log the error to an error reporting service
     console.error(error)

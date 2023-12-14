@@ -6,7 +6,7 @@ import CssBaseline from '@mui/material/CssBaseline'
 import NextAppDirEmotionCacheProvider from './EmotionCache'
 import theme from './theme'
 
-export default function ThemeRegistry({ children }) {
+export default function ThemeRegistry({ children }: any) {
   return (
     <NextAppDirEmotionCacheProvider options={{ key: 'mui' }}>
       <ThemeProvider theme={theme}>
